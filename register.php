@@ -25,7 +25,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $result = $stmt->get_result();
 
         if ($result->num_rows > 0) {
-            $message = "Email is already registered.";
+            $message = "Email is already registered...";
         } else {
             // Hash password
             $hashed_password = password_hash($password, PASSWORD_BCRYPT);
